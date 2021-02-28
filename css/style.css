@@ -10,7 +10,7 @@
 
 body {
   font-size: 10px;
-  font-family: "Montserrat, sans-serif";
+  font-family: "Montserrat";
   background-color: #d60805;
 }
 
@@ -241,8 +241,9 @@ footer ul li {
 .footer-items {
   line-height: 1.3rem;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat";
   text-align: right;
+  padding-top: 30px;
 }
 
 #wsp {
