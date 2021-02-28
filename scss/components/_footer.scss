@@ -1,0 +1,36 @@
+//_____ FOOTER _____
+
+footer {
+    text-align: right;
+    padding-right: 1%; 
+
+    ul {
+        list-style-type: none;
+
+        li {
+            color: white;
+            margin: 0;
+        }
+    }
+}
+
+.footer-items {
+    line-height: 1.3rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+// icono wsp 
+#wsp {
+    position: fixed;
+    bottom: 1.6rem;
+    left: 1.6rem;
+}
+
+.fa-whatsapp {
+    color:#fff;
+    background:
+    linear-gradient(#25d366,#25d366)4px 84%/7px 7px no-repeat,
+    radial-gradient(#25d366 59%,transparent 0);
+}

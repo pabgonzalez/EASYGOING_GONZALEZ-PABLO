@@ -1,0 +1,19 @@
+$font-size-default: 10px;
+
+$my-font-families: (
+    primary: "Montserrat, sans-serif",
+    secondary: 'Roboto Slab'
+);
+
+$my-colors: (
+    myRed: #d60805,
+    myDanger: #dc3545,
+    myRed2: rgba(214, 8, 5,0.8)
+);
+
+@mixin transform($propiedad) {
+    -webkit-transform: $propiedad;
+    -ms-transform: $propiedad;
+    -o-transform: $propiedad;
+    transform: $propiedad;
+}

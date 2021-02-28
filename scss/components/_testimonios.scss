@@ -1,0 +1,33 @@
+/*_____ TESTIMONIOS _____*/
+#testimonios {
+    background-color: white;
+}
+
+.fotos-testimonios {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotos  {
+    padding: 0;
+    p{
+        font-size: 1rem;
+        &::first-line {
+            color:map-get($map: $my-colors, $key: myRed);
+        }
+    }
+}
+
+.testimonio {
+    color: black;
+    background-color: rgba(255,255,255,0.3);
+    text-align: justify;
+    padding: 1.6rem;
+    margin: 0 1.6rem;
+    font-family: map-get($map: $my-font-families, $key: secondary);
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1rem;
+}

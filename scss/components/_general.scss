@@ -1,0 +1,59 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    font-size: $font-size-default;
+    font-family: map-get($map: $my-font-families, $key: primary);
+    background-color: map-get($map: $my-colors, $key: myRed);
+}
+
+
+
+h2 {
+    color: map-get($map: $my-colors, $key: myRed2);
+    padding: 5px 10px;
+    margin: 0px;
+    font-family: map-get($map: $my-font-families, $key: secondary);
+    // text-shadow: 1px 1px 2px lightgray;
+    font-size: 2.5rem;
+    transition: all 2s ease-out;
+    &:first-letter{
+        text-decoration: underline;
+    }
+}
+
+.titulo{
+    font-size: 2rem!important;
+    font-family: map-get($map: $my-font-families, $key: secondary);
+    font-weight: bold;
+}
+
+#nosotros:hover h2, #destinos:hover h2, #testimonios:hover h2, #contacto:hover h2 {
+    font-size: 2.7rem;
+    // transform: translate(40%);
+    // @include transform(translate(5%));
+}
+
+/*_____ INICIO _____*/
+#video-presentacion {
+    /* position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden; */
+    display: none;
+}
+
+#video-presentacion iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

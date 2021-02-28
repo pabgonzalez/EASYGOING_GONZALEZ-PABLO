@@ -1,0 +1,11 @@
+/* Mobile and small tablet */
+@media only screen and (max-width:600px) {
+    .fotos-testimonios{justify-content: center;}
+    .fotos {width: 80%;}
+}
+
+/* Big tablet and desktop */
+@media only screen and (min-width:601px) {
+    .fotos-testimonios{justify-content: space-between;}
+    .fotos {width: 30%;}
+}
