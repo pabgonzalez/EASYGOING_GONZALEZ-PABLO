@@ -19,7 +19,9 @@ footer {
     font-size: 1rem;
     font-family: map-get($map: $my-font-families, $key: primary);
     text-align: right;
-    padding-top: 30px;
+    padding-top: 3rem;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 // icono wsp 

@@ -56,19 +56,19 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                <a class="nav-link active menu-titulo" aria-current="page" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#nosotros">Nosotros</a>
+                <a class="nav-link menu-titulo" href="#nosotros">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#destinos">Destinos</a>
+                    <a class="nav-link menu-titulo" href="#destinos">Destinos</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#testimonios">Testimonios</a>
+                <a class="nav-link menu-titulo" href="#testimonios">Testimonios</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+                <a class="nav-link menu-titulo" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
                 </li>
             </ul>
             </div>
@@ -207,19 +207,17 @@
     <section id="testimonios">
     <h2>Testimonios</h2>
 
-    <div class="fotos-testimonios">
-        <div class="fotos foto1">
-            <img src="imgs/face.png" alt="" width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum iusto eaque? Esse iste sint consequuntur explicabo ipsam magnam assumenda perspiciatis quas id placeat autem optio, eligendi reiciendis expedita officia?</p>
+    <div class="container">
+		<div class="row">
+        <div class="col-sm">
+            <p comment>"<strong>¡Genios totales!</strong> Gracias a ellos hicimos un hermoso viaje a Europa, organizaron todo, a nosotros solo nos tocó disfrutar!"</p>
+			<p comment>"<strong>Todo fue perfecto</strong> para mi viaje a Europa sola. Además de contar con el respaldo  durate el viaje.Excelente!!!!!"</p>
+			<p comment>"Viajé con la agencia  en tres oportunidades: dos a Brasil (Río y Florianópolis) y  una a Uruguay (Colonia), contratando a través suyo traslado y estadía. Todo estuvo muy bien organizado. Resalto el <strong>excelente asesoramiento personalizado</strong>."</p> 	
         </div>
-        <div class="fotos foto2">
-            <img src="imgs/face.png" alt="" width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum iusto eaque? Esse iste sint consequuntur explicabo ipsam magnam assumenda perspiciatis quas id placeat autem optio, eligendi reiciendis expedita officia?</p>
+        <div class="col-sm">
+            <p comment>"Excelente agencia de viajes, te dan toda <strong>la información que necesitas y un poquito más para poder disfrutar de cada momento</strong>. Muy atentos a todos los detalles. Realice tres viajes con Easygoing: el primero fue por la Patagonia Argentina comenzando en Bariloche, recorriendo la ruta 40 y termine en El Calafate, un recorrido hecho a mí medida con todos los lugares que quería visitar. La segunda fue a Perú donde realice el camino del Inca todo muy bien organizado. Tuve un problema de salud, no podía comunicarme con el seguro, me contacte con Estefanía (una de las asesoras de la agencia) y ella enseguida resolvió todo, una genia, a los pocos minutos me llamaron del seguro. El tercero fue por Europa, me organizaron: aéreos, traslados, tours, alojamientos y excursiones, en este mí asesor fue Eduardo y estuvo muy atento durante mí viaje, todo de 10!!!!"</p>
         </div>
-        <div class="fotos foto3">
-            <img src="imgs/face.png" alt="" width="100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum iusto eaque? Esse iste sint consequuntur explicabo ipsam magnam assumenda perspiciatis quas id placeat autem optio, eligendi reiciendis expedita officia?</p>
-        </div>
+		</div>
     </div>
 
     </section>
@@ -228,102 +226,35 @@
     <section id="contacto">
     <h2>Contacto</h2>
 
-    <div id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2908998339767!2d-58.38722738555262!3d-34.59680488046127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab8440c0c51%3A0xe9062d9d02e44941!2sMarcelo%20Torcuato%20de%20Alvear%201261%2C%20C1058%20AAS%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1611334412614!5m2!1sen!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
+    
 
     <div class="contacto-content">
-    <p class="p-contacto">Si tenés un viaje en mente y querés que te ayudemos a organizarlo, o simplemente necesitas inspiración, no dudes en contactarnos o completar el formulario. Como podes ver en el mapa, nuestras oficinas están en el centro de Buenos Aires. Si estas cerca de Buenos Aires, podemos organizar una reunión presencial. En cualquier caso, también podemos agendar una reunión virtual.</p>
-
-		<form action="/Server/" method="POST" class="formulario">
-			<div class="form-content">
-				<h4>¡Completá el formulario para ponernos en contacto!</h4>
-				<label for="full-name">Nombre:</label> <!-- Lo completo para el audio descriptivo -->
-				<input 
-					type="text" 
-					id="full-name" 
-					name="nombre" 
-					placeholder="JUAN PÉREZ"
-					required
-				> 
-				<!-- Se tienen que llamar igual 
-					name = no se ve, es el atributo para conectar al servidor ([id]=[for])
-				-->
-
-				<label for="email">Correo electrónico:</label>
-				<input 
-					type="email" 
-					name="email" 
-					id="email"
-					placeholder="juan.perez@mail.com"
-				>
-
-				<label for="phone">Teléfono/Celular:</label>
-				<input 
-					type="number" 
-					name="phone" 
-					id="phone"
-					placeholder="541167896789"
-				>
-
-				<label for="location">Lugar de residencia:</label>
-				<input 
-					type="text" 
-					name="residencia" 
-					id="location"
-					placeholder="Buenos Aires, Argentina"
-				>
-
-				<fieldset class="metodo-de-contacto">
-					<p>Método de contacto preferido:</p>
-					<label class="contact-option" for="contact-option">Correo electrónico</label>
-					<input type="radio" name="metodo-preferido" id="contact-option" checked>
-
-					<label class="contact-option" for="contact-option">Mensaje de WhatsApp</label>
-					<input type="radio" name="metodo-preferido" id="contact-option">
-
-					<label class="contact-option" for="contact-option">Teléfono</label>
-					<input type="radio" name="metodo-preferido" id="contact-option">
-				</fieldset>
-
-				<label for="t-shirt">Horario de contacto preferido:</label>
-				<select name="t-shirt" id="t-shirt">
-					<option value="small">Cualquier horario de 10 a 20hs</option>
-					<option value="small">10 a 12hs</option>
-					<option value="medium">12 a 14hs</option>
-					<option value="medium">14 a 16hs</option>
-					<option value="large">16 a 18hs</option>
-					<option value="large">18 a 20hs</option>
-				</select>
-
-				<label for="mensaje">Cualquier cosa que nos quieras decir ahora:</label>
-				<textarea name="mensaje" id="mensaje" placeholder="Escribí tu mensaje. Podes agrandar el recuadro de texto desde la esquina inferior derecha."></textarea>
-				
-				<div class="boton-enviar">
-					<button type="submit">Enviar</button>
-				</div>
-				
-			</div>
-		</form>
-    <!-- Fin Form -->
-
+	
+	<div class="container translate-middle">
+		<div class="row">
+			<div class="col"><p class="p-contacto">Si tenés un viaje en mente y querés que te ayudemos a organizarlo, o simplemente necesitas inspiración, no dudes en contactarnos o completar el formulario. Como podes ver en el mapa, nuestras oficinas están en el centro de Buenos Aires. Si estas cerca de Buenos Aires, podemos organizar una reunión presencial. En cualquier caso, también podemos agendar una reunión virtual.</p></div>
+			<div class="col translate-middle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2908998339767!2d-58.38722738555262!3d-34.59680488046127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab8440c0c51%3A0xe9062d9d02e44941!2sMarcelo%20Torcuato%20de%20Alvear%201261%2C%20C1058%20AAS%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1611334412614!5m2!1sen!2sar" width=90% max-width="400" min-width="250" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+		</div>
 	</div>
+		<div class="typeform-widget" data-url="https://form.typeform.com/to/g51lEhRC?typeform-medium=embed-snippet" style="width: 100%; height: 600px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+	</div>
+
 	</section>
 
     <!-- FOOTER -->
-    <footer class="bg-danger">
-        <ul class="footer-items">
-            <li>Easy Going Viajes. EVT Leg. 12978 Res. 958/07</li>
-            <li>Marcelo T. de Alvear 1261 - 2do Piso - Oficina 22. CP 1058. Buenos Aires, Argentina</li>
-            <li>Teléfono / WhatsApp: +54 11 5555-5555</li>
-            <li>Correo electrónico: abc@abc.com </li>
-        </ul>
+		<footer class="bg-danger">
+			<ul class="footer-items">
+				<li>Easy Going Viajes. EVT Leg. 12978 Res. 958/07</li>
+				<li>Marcelo T. de Alvear 1261 - 2do Piso - Oficina 22. CP 1058. Buenos Aires, Argentina</li>
+				<li>WhatsApp: +54 11 2256-2584</li>
+				<li>Correo electrónico: eduardogleiro@gmail.com </li>
+			</ul>
+		
+			<a href="https://wa.link/86ke59" target="_blank" id="wsp">
+				<i class="fab fa-whatsapp fa-3x"></i>
+			</a>
+		</footer>
     
-        <a href="https://wa.link/86ke59" target="_blank" id="wsp">
-            <i class="fab fa-whatsapp fa-3x"></i>
-        </a>
-    </footer>
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
